@@ -1,5 +1,10 @@
 body {
   font-family: Palatino;
   text-align: center;
-  background-image: url('/images/reel.jpg');
+  background-image: url('../css/images/reel.jpg');
+  color: inherit;
+}
+
+h1 {
+  font-size: 100px;
 }

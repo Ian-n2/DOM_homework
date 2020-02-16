@@ -5,12 +5,11 @@ document.addEventListener('DOMContentLoaded',() => {
     event.preventDefault();
 
     const entry = document.createElement('li');
-    entry.innerHTML =
-    <div class=`${event.target.review.value}`></div>
-    `<h1> ${event.target.title.value}</h1>
-    <p>${event.target.type.value}</p>
-    <p>${event.target.year.value}</p>
-    <p>${event.target.review.value}</p>`
+    entry.innerHTML =`
+    <h2>${event.target.title.value}</h2>
+    <h3>${event.target.type.value}</h3>
+    <h3>${event.target.year.value}</h3>
+    <h3>${event.target.review.value}</h3>`
 
     const list = document.querySelector('#Movie-list');
     list.appendChild(entry);
@@ -31,6 +30,7 @@ document.addEventListener('DOMContentLoaded',() => {
   const deleteAllButton = document.querySelector('#delete-all');
   deleteAllButton.addEventListener('click', handleDeleteAllClick);
 
+});
 
 
 
@@ -54,4 +54,3 @@ document.addEventListener('DOMContentLoaded',() => {
   //   movieList.appendChild(yearElement);
   //   movieList.appendChild(typeElement);
   //   movieList.appendChild(reviewElement);
-});
